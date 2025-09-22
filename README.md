@@ -119,3 +119,26 @@ O MVP usa dados simulados para demonstração:
 4. URL pública instantânea
 
 **Resultado:** Aplicação profissional acessível globalmente em minutos!
+
+
+---
+
+## 👨‍💻 Autor
+
+**Hélio Guilherme Dias Silva**
+- 🏆 Top 50 Global Innovator
+- 🤝 NVIDIA Partner
+- 🌍 International experience (UN, World Bank)
+- 💼 US$ 8.5B+ mandates experience
+- 🌱 Sustainability & AI expert
+
+## 📄 Projeto
+
+**NowGo AI Platform** - Intelligent AI Cost Optimization System  
+**Versão**: 1.0.0 MVP  
+**Licença**: MIT  
+**Repositório**: https://github.com/Helioguilhermediassilva/nowgo-ai-platform
+
+---
+
+*Desenvolvido com ❤️ para revolucionar a otimização de custos de IA empresarial*
