@@ -116,7 +116,7 @@ function App() {
             <div className="flex items-center space-x-3">
               <div className="flex items-center space-x-2">
                 <Brain className="h-8 w-8 text-cyan-400" />
-                <span className="text-2xl font-bold text-white">FrugalAI</span>
+                <span className="text-2xl font-bold text-white">NowGo AI</span>
                 <Badge variant="secondary" className="bg-cyan-400/20 text-cyan-300 border-cyan-400/30">
                   Platform
                 </Badge>
@@ -195,7 +195,7 @@ function App() {
               size="lg" 
               className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white px-8 py-4 text-lg"
             >
-              Try FrugalAI Now
+              Try NowGo AI Now
             </Button>
           </div>
         </div>
@@ -207,7 +207,7 @@ function App() {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-white mb-4">
-                See FrugalAI in Action
+                See NowGo AI in Action
               </h2>
               <p className="text-gray-300">
                 Try our intelligent routing system with your own queries
@@ -406,7 +406,7 @@ function App() {
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-4">
-              Why Choose FrugalAI?
+              Why Choose NowGo AI?
             </h2>
             <p className="text-gray-300 max-w-2xl mx-auto">
               Transform your AI operations with proven cost optimization technology
@@ -464,7 +464,7 @@ function App() {
                 </div>
                 
                 <div className="flex justify-between items-center p-4 bg-green-500/10 border border-green-500/20 rounded-lg">
-                  <span className="text-white">With FrugalAI</span>
+                  <span className="text-white">With NowGo AI</span>
                   <span className="text-green-400 font-bold">$420/month</span>
                 </div>
                 
@@ -511,7 +511,7 @@ function App() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 mb-4 md:mb-0">
               <Brain className="h-6 w-6 text-cyan-400" />
-              <span className="text-white font-semibold">FrugalAI Platform</span>
+              <span className="text-white font-semibold">NowGo AI Platform</span>
             </div>
             
             <div className="flex items-center space-x-6 text-sm text-gray-400">
@@ -522,7 +522,7 @@ function App() {
           </div>
           
           <div className="mt-8 pt-8 border-t border-white/10 text-center text-gray-400 text-sm">
-            © 2025 FrugalAI Platform. Built with intelligent AI cost optimization technology.
+            © 2025 NowGo AI Platform. Built with intelligent AI cost optimization technology.
           </div>
         </div>
       </footer>
