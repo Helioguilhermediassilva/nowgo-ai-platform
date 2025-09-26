@@ -126,6 +126,7 @@ function App() {
               <a href="#features" className="text-gray-300 hover:text-white transition-colors">Features</a>
               <a href="#benefits" className="text-gray-300 hover:text-white transition-colors">Benefits</a>
               <a href="#pricing" className="text-gray-300 hover:text-white transition-colors">Pricing</a>
+              <a href="#api-docs" className="text-gray-300 hover:text-white transition-colors">API Docs</a>
               <Button className="bg-white text-cyan-600 hover:bg-gray-100 border border-white">
                 Sign In
               </Button>
@@ -678,38 +679,196 @@ function App() {
             </div>
             
             <div className="mt-8">
-              <Button className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white px-8 py-3">
+              <Button 
+                className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white px-8 py-3 mr-4"
+                onClick={() => window.open('/api/docs', '_blank')}
+              >
                 View API Documentation
+              </Button>
+              <Button 
+                className="bg-white text-cyan-600 hover:bg-gray-100 border border-white px-8 py-3"
+                onClick={() => document.getElementById('api-docs').scrollIntoView({ behavior: 'smooth' })}
+              >
+                Integration Guide
               </Button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 px-4">
-        <div className="container mx-auto text-center">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-4xl font-bold text-white mb-6">
-              Ready to Optimize Your AI Costs?
+      {/* API Documentation Section */}
+      <section id="api-docs" className="py-20 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Developer-First API
             </h2>
-            <p className="text-xl text-gray-300 mb-8">
-              Join hundreds of companies already saving thousands on AI operations
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white px-8 py-4">
-                Start Free Trial
-              </Button>
-              <Button size="lg" className="bg-white text-cyan-600 hover:bg-gray-100 border border-white px-8 py-4">
-                Schedule Demo
-              </Button>
-            </div>
-            
-            <p className="text-sm text-gray-400 mt-4">
-              No credit card required • 14-day free trial • Cancel anytime
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Integrate intelligent AI cost optimization into your applications with our RESTful API. 
+              Built with FastAPI for maximum performance and scalability.
             </p>
           </div>
+
+          <div className="grid md:grid-cols-2 gap-12 mb-16">
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Quick Start</h3>
+              <div className="bg-gray-900 rounded-lg p-6 text-green-400 font-mono text-sm overflow-x-auto">
+                <div className="mb-4">
+                  <span className="text-gray-500"># Install the client</span><br/>
+                  <span className="text-blue-400">pip install</span> nowgo-ai
+                </div>
+                <div className="mb-4">
+                  <span className="text-gray-500"># Initialize client</span><br/>
+                  <span className="text-purple-400">from</span> nowgo_ai <span className="text-purple-400">import</span> NowGoAIClient<br/>
+                  client = <span className="text-yellow-400">NowGoAIClient</span>(<span className="text-green-300">"your-api-key"</span>)
+                </div>
+                <div>
+                  <span className="text-gray-500"># Optimize your query</span><br/>
+                  result = client.<span className="text-yellow-400">optimize_query</span>(<br/>
+                  &nbsp;&nbsp;<span className="text-green-300">"Explain quantum computing"</span>,<br/>
+                  &nbsp;&nbsp;priority=<span className="text-green-300">"balanced"</span><br/>
+                  )<br/>
+                  <span className="text-purple-400">print</span>(<span className="text-green-300">f"Saved {'{result.savings_percentage}'}% vs GPT-4"</span>)
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Key Features</h3>
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <div className="w-6 h-6 bg-cyan-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-white text-xs">✓</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Intelligent Routing</h4>
+                    <p className="text-gray-600">Automatically selects the optimal AI model based on query complexity and your priorities</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-6 h-6 bg-cyan-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-white text-xs">✓</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Real-time Analytics</h4>
+                    <p className="text-gray-600">Track usage, costs, and savings with detailed analytics and reporting</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-6 h-6 bg-cyan-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-white text-xs">✓</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Enterprise Security</h4>
+                    <p className="text-gray-600">API key authentication, rate limiting, and comprehensive audit logging</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-6 h-6 bg-cyan-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-white text-xs">✓</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Batch Processing</h4>
+                    <p className="text-gray-600">Process multiple queries efficiently with our batch API endpoints</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <Card className="border-2 border-cyan-200 hover:border-cyan-400 transition-colors">
+              <CardHeader>
+                <CardTitle className="text-xl text-gray-900">REST API</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 mb-4">
+                  RESTful API with OpenAPI/Swagger documentation. Easy integration with any programming language.
+                </p>
+                <Button 
+                  className="w-full bg-cyan-500 hover:bg-cyan-600 text-white"
+                  onClick={() => window.open('/api/docs', '_blank')}
+                >
+                  View API Docs
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 border-blue-200 hover:border-blue-400 transition-colors">
+              <CardHeader>
+                <CardTitle className="text-xl text-gray-900">SDKs</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 mb-4">
+                  Official SDKs for Python, JavaScript, Go, and Java. Get started in minutes with your favorite language.
+                </p>
+                <Button className="w-full bg-blue-500 hover:bg-blue-600 text-white">
+                  Download SDKs
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 border-purple-200 hover:border-purple-400 transition-colors">
+              <CardHeader>
+                <CardTitle className="text-xl text-gray-900">Examples</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 mb-4">
+                  Comprehensive examples and use cases across different industries and programming languages.
+                </p>
+                <Button className="w-full bg-purple-500 hover:bg-purple-600 text-white">
+                  View Examples
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-lg p-8 text-white">
+            <h3 className="text-2xl font-bold mb-4">API Endpoints Overview</h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 className="font-semibold text-cyan-400 mb-2">Core Endpoints</h4>
+                <ul className="space-y-2 text-sm">
+                  <li><code className="bg-gray-700 px-2 py-1 rounded">POST /api/optimize</code> - Optimize AI queries</li>
+                  <li><code className="bg-gray-700 px-2 py-1 rounded">GET /api/usage</code> - Usage statistics</li>
+                  <li><code className="bg-gray-700 px-2 py-1 rounded">GET /api/models</code> - Available models</li>
+                  <li><code className="bg-gray-700 px-2 py-1 rounded">POST /api/batch</code> - Batch processing</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold text-cyan-400 mb-2">Management</h4>
+                <ul className="space-y-2 text-sm">
+                  <li><code className="bg-gray-700 px-2 py-1 rounded">GET /api/pricing</code> - Pricing plans</li>
+                  <li><code className="bg-gray-700 px-2 py-1 rounded">GET /api/analytics</code> - Advanced analytics</li>
+                  <li><code className="bg-gray-700 px-2 py-1 rounded">POST /api/webhook</code> - Webhook config</li>
+                  <li><code className="bg-gray-700 px-2 py-1 rounded">GET /api/health</code> - Health check</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-to-r from-cyan-500 to-blue-600">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            Ready to Optimize Your AI Costs?
+          </h2>
+          <p className="text-xl text-cyan-100 mb-8">
+            Join thousands of companies already saving up to 98% on AI costs
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button className="bg-white text-cyan-600 hover:bg-gray-100 px-8 py-3 text-lg">
+              Start Free Trial
+            </Button>
+            <Button className="bg-white text-cyan-600 hover:bg-gray-100 px-8 py-3 text-lg">
+              Schedule Demo
+            </Button>
+          </div>
+          <p className="text-sm text-cyan-100 mt-4">
+            No credit card required • 14-day free trial • Cancel anytime
+          </p>
         </div>
       </section>
 
