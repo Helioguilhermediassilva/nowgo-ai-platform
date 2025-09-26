@@ -8,7 +8,6 @@ import { Badge } from './components/ui/badge';
 import { Progress } from './components/ui/progress';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './components/ui/tabs';
 import { 
-  Brain, 
   DollarSign, 
   Zap, 
   Shield, 
@@ -115,7 +114,6 @@ function App() {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
               <div className="flex items-center space-x-2">
-                <Brain className="h-8 w-8 text-cyan-400" />
                 <span className="text-2xl font-bold text-white">NowGo AI</span>
                 <Badge variant="secondary" className="bg-cyan-400/20 text-cyan-300 border-cyan-400/30">
                   Platform
@@ -877,7 +875,6 @@ function App() {
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 mb-4 md:mb-0">
-              <Brain className="h-6 w-6 text-cyan-400" />
               <span className="text-white font-semibold">NowGo AI Platform</span>
             </div>
             
