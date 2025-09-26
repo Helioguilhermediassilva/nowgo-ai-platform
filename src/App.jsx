@@ -478,6 +478,214 @@ function App() {
         </div>
       </section>
 
+      {/* Pricing Section */}
+      <section id="pricing" className="py-16 px-4 bg-black/10">
+        <div className="container mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-white mb-4">
+              Simple, Transparent Pricing
+            </h2>
+            <p className="text-gray-300 max-w-2xl mx-auto">
+              Choose the perfect plan for your AI optimization needs. All plans include our intelligent routing technology.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Starter Plan */}
+            <Card className="bg-white/5 border-white/10 backdrop-blur-sm relative">
+              <CardHeader className="text-center">
+                <CardTitle className="text-white text-2xl mb-2">Starter</CardTitle>
+                <div className="text-4xl font-bold text-cyan-400 mb-2">$99</div>
+                <div className="text-gray-400">/month</div>
+                <CardDescription className="text-gray-300 mt-4">
+                  Perfect for small teams getting started with AI cost optimization
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div className="flex items-center text-gray-300">
+                    <CheckCircle className="w-5 h-5 text-green-400 mr-3" />
+                    <span>10,000 API requests/month</span>
+                  </div>
+                  <div className="flex items-center text-gray-300">
+                    <CheckCircle className="w-5 h-5 text-green-400 mr-3" />
+                    <span>Smart AI model routing</span>
+                  </div>
+                  <div className="flex items-center text-gray-300">
+                    <CheckCircle className="w-5 h-5 text-green-400 mr-3" />
+                    <span>Real-time cost optimization</span>
+                  </div>
+                  <div className="flex items-center text-gray-300">
+                    <CheckCircle className="w-5 h-5 text-green-400 mr-3" />
+                    <span>Basic analytics dashboard</span>
+                  </div>
+                  <div className="flex items-center text-gray-300">
+                    <CheckCircle className="w-5 h-5 text-green-400 mr-3" />
+                    <span>Email support</span>
+                  </div>
+                  <div className="flex items-center text-gray-300">
+                    <CheckCircle className="w-5 h-5 text-green-400 mr-3" />
+                    <span>Up to 98% cost savings</span>
+                  </div>
+                </div>
+                <Button className="w-full mt-6 bg-white text-cyan-600 hover:bg-gray-100">
+                  Get Started
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Professional Plan */}
+            <Card className="bg-white/5 border-cyan-400/50 backdrop-blur-sm relative">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                <Badge className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-4 py-1">
+                  Most Popular
+                </Badge>
+              </div>
+              <CardHeader className="text-center">
+                <CardTitle className="text-white text-2xl mb-2">Professional</CardTitle>
+                <div className="text-4xl font-bold text-cyan-400 mb-2">$299</div>
+                <div className="text-gray-400">/month</div>
+                <CardDescription className="text-gray-300 mt-4">
+                  Ideal for growing companies with higher AI usage
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div className="flex items-center text-gray-300">
+                    <CheckCircle className="w-5 h-5 text-green-400 mr-3" />
+                    <span>50,000 API requests/month</span>
+                  </div>
+                  <div className="flex items-center text-gray-300">
+                    <CheckCircle className="w-5 h-5 text-green-400 mr-3" />
+                    <span>Everything in Starter</span>
+                  </div>
+                  <div className="flex items-center text-gray-300">
+                    <CheckCircle className="w-5 h-5 text-green-400 mr-3" />
+                    <span>Advanced analytics & insights</span>
+                  </div>
+                  <div className="flex items-center text-gray-300">
+                    <CheckCircle className="w-5 h-5 text-green-400 mr-3" />
+                    <span>Custom model preferences</span>
+                  </div>
+                  <div className="flex items-center text-gray-300">
+                    <CheckCircle className="w-5 h-5 text-green-400 mr-3" />
+                    <span>Priority support</span>
+                  </div>
+                  <div className="flex items-center text-gray-300">
+                    <CheckCircle className="w-5 h-5 text-green-400 mr-3" />
+                    <span>Webhook integrations</span>
+                  </div>
+                  <div className="flex items-center text-gray-300">
+                    <CheckCircle className="w-5 h-5 text-green-400 mr-3" />
+                    <span>Team collaboration tools</span>
+                  </div>
+                </div>
+                <Button className="w-full mt-6 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white">
+                  Start Free Trial
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Enterprise Plan */}
+            <Card className="bg-white/5 border-white/10 backdrop-blur-sm relative">
+              <CardHeader className="text-center">
+                <CardTitle className="text-white text-2xl mb-2">Enterprise</CardTitle>
+                <div className="text-4xl font-bold text-cyan-400 mb-2">$999</div>
+                <div className="text-gray-400">/month</div>
+                <CardDescription className="text-gray-300 mt-4">
+                  For large organizations with enterprise requirements
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div className="flex items-center text-gray-300">
+                    <CheckCircle className="w-5 h-5 text-green-400 mr-3" />
+                    <span>200,000 API requests/month</span>
+                  </div>
+                  <div className="flex items-center text-gray-300">
+                    <CheckCircle className="w-5 h-5 text-green-400 mr-3" />
+                    <span>Everything in Professional</span>
+                  </div>
+                  <div className="flex items-center text-gray-300">
+                    <CheckCircle className="w-5 h-5 text-green-400 mr-3" />
+                    <span>Dedicated account manager</span>
+                  </div>
+                  <div className="flex items-center text-gray-300">
+                    <CheckCircle className="w-5 h-5 text-green-400 mr-3" />
+                    <span>Custom integrations</span>
+                  </div>
+                  <div className="flex items-center text-gray-300">
+                    <CheckCircle className="w-5 h-5 text-green-400 mr-3" />
+                    <span>SLA guarantees</span>
+                  </div>
+                  <div className="flex items-center text-gray-300">
+                    <CheckCircle className="w-5 h-5 text-green-400 mr-3" />
+                    <span>On-premise deployment option</span>
+                  </div>
+                  <div className="flex items-center text-gray-300">
+                    <CheckCircle className="w-5 h-5 text-green-400 mr-3" />
+                    <span>Advanced security features</span>
+                  </div>
+                  <div className="flex items-center text-gray-300">
+                    <CheckCircle className="w-5 h-5 text-green-400 mr-3" />
+                    <span>Custom model training</span>
+                  </div>
+                </div>
+                <Button className="w-full mt-6 bg-white text-cyan-600 hover:bg-gray-100">
+                  Contact Sales
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* API Information */}
+          <div className="mt-16 text-center">
+            <h3 className="text-2xl font-bold text-white mb-6">
+              Powerful API for Developers
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+              <Card className="bg-white/5 border-white/10 backdrop-blur-sm">
+                <CardContent className="p-6 text-center">
+                  <Zap className="w-8 h-8 text-cyan-400 mx-auto mb-3" />
+                  <h4 className="text-white font-semibold mb-2">FastAPI</h4>
+                  <p className="text-gray-400 text-sm">High-performance API built with FastAPI</p>
+                </CardContent>
+              </Card>
+              
+              <Card className="bg-white/5 border-white/10 backdrop-blur-sm">
+                <CardContent className="p-6 text-center">
+                  <Shield className="w-8 h-8 text-green-400 mx-auto mb-3" />
+                  <h4 className="text-white font-semibold mb-2">Secure</h4>
+                  <p className="text-gray-400 text-sm">API key authentication & rate limiting</p>
+                </CardContent>
+              </Card>
+              
+              <Card className="bg-white/5 border-white/10 backdrop-blur-sm">
+                <CardContent className="p-6 text-center">
+                  <BarChart3 className="w-8 h-8 text-purple-400 mx-auto mb-3" />
+                  <h4 className="text-white font-semibold mb-2">Analytics</h4>
+                  <p className="text-gray-400 text-sm">Detailed usage stats & cost tracking</p>
+                </CardContent>
+              </Card>
+              
+              <Card className="bg-white/5 border-white/10 backdrop-blur-sm">
+                <CardContent className="p-6 text-center">
+                  <Settings className="w-8 h-8 text-gray-400 mx-auto mb-3" />
+                  <h4 className="text-white font-semibold mb-2">Easy Integration</h4>
+                  <p className="text-gray-400 text-sm">RESTful API with comprehensive docs</p>
+                </CardContent>
+              </Card>
+            </div>
+            
+            <div className="mt-8">
+              <Button className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white px-8 py-3">
+                View API Documentation
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 px-4">
         <div className="container mx-auto text-center">
