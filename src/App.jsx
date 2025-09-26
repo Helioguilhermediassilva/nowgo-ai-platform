@@ -126,7 +126,7 @@ function App() {
               <a href="#features" className="text-gray-300 hover:text-white transition-colors">Features</a>
               <a href="#benefits" className="text-gray-300 hover:text-white transition-colors">Benefits</a>
               <a href="#pricing" className="text-gray-300 hover:text-white transition-colors">Pricing</a>
-              <Button variant="outline" className="border-cyan-400/50 text-cyan-300 hover:bg-cyan-400/10">
+              <Button className="bg-white text-cyan-600 hover:bg-gray-100 border border-white">
                 Sign In
               </Button>
               <Button className="bg-cyan-500 hover:bg-cyan-600 text-white">
@@ -493,7 +493,7 @@ function App() {
               <Button size="lg" className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white px-8 py-4">
                 Start Free Trial
               </Button>
-              <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10 px-8 py-4">
+              <Button size="lg" className="bg-white text-cyan-600 hover:bg-gray-100 border border-white px-8 py-4">
                 Schedule Demo
               </Button>
             </div>
